@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Standard Botanical</title>
+  <meta name="description" content="Standard Botanical is a houseplant care app: a care schedule for each of your plants, reminders for what needs you today, and a Plantdex of the plant types you keep.">
+  <link rel="icon" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <style>
+    /* System fonts only: this page loads nothing from third parties. Same tokens as privacy/. */
+    :root {
+      --paper: #f7f5ef;
+      --ink: #1f2a22;
+      --muted: #5b665e;
+      --rule: #d8d3c4;
+      --accent: #2f5d3a;
+      --panel: #ecebe2;
+      color-scheme: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #141a16;
+        --ink: #e6e9e3;
+        --muted: #a3ada5;
+        --rule: #2e3831;
+        --accent: #8fc79c;
+        --panel: #1c241e;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding-inline: 20px;
+      background: var(--paper);
+      color: var(--ink);
+      font: 17px/1.65 Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+    }
+    main { max-width: 42rem; margin: 0 auto; padding-block: 56px 72px; }
+    .masthead {
+      border-top: 3px double var(--accent);
+      border-bottom: 1px solid var(--rule);
+      padding-block: 14px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .wordmark {
+      margin: 0;
+      font-size: 0.95rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .intro { text-align: center; margin-bottom: 40px; }
+    .icon { display: block; width: 96px; height: 96px; margin: 0 auto 20px; }
+    h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 12px; font-weight: 600; }
+    .lead { font-size: 1.15rem; margin: 0 auto; max-width: 32rem; }
+    h2 {
+      font-size: 1.15rem;
+      margin: 32px 0 8px;
+      padding-top: 16px;
+      border-top: 1px solid var(--rule);
+    }
+    p { margin: 0 0 14px; }
+    .contact {
+      background: var(--panel);
+      border-left: 4px solid var(--accent);
+      padding: 16px 20px;
+      margin-top: 40px;
+    }
+    .contact p:last-child { margin-bottom: 0; }
+    a { color: var(--accent); overflow-wrap: anywhere; }
+    footer { margin-top: 48px; color: var(--muted); font-size: 0.9rem; text-align: center; }
+    footer p { margin-bottom: 6px; }
+    @media (max-width: 480px) {
+      body { font-size: 16px; }
+      h1 { font-size: 1.7rem; }
+      .lead { font-size: 1.05rem; }
+      main { padding-block: 32px 48px; }
+      .icon { width: 80px; height: 80px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="masthead">
+      <p class="wordmark">Standard Botanical</p>
+    </header>
+
+    <div class="intro">
+      <img class="icon" src="icon.png" width="96" height="96" alt="">
+      <h1>Standard Botanical</h1>
+      <p class="lead">Standard Botanical keeps a care schedule for each of your houseplants and tells you which ones need you today.</p>
+    </div>
+
+    <h2>Care schedules and reminders</h2>
+    <p>Watering, fertilizing and repotting, each on its own schedule for each plant, slowing down in the dormant months. Around 09:00 a note says what your plants need today, and around 20:00 a reminder follows if watering or fertilizing is still waiting.</p>
+
+    <h2>The Plantdex</h2>
+    <p>Every plant you add is recorded in your Plantdex. Each entry has the plant’s origin, family and care, and whether the ASPCA lists it as toxic to cats and dogs.</p>
+
+    <h2>Private by design</h2>
+    <p>No account, no ads, no analytics. Your plants and photos are kept on your phone.</p>
+
+    <div class="contact">
+      <p>Questions, or a plant you’d like added: <a href="mailto:support@standardbotanical.com">support@standardbotanical.com</a></p>
+    </div>
+
+    <footer>
+      <p><a href="privacy/">Privacy policy</a></p>
+      <p>© 2026 Standard Botanical</p>
+    </footer>
+  </main>
+</body>
+</html>
